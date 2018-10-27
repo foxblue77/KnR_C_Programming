@@ -9,7 +9,7 @@ C Programming Language" by Brian Kernighan and Dennis Ritchie. This book is coll
 <blockquote>#include <stdio.h><br />
 
 int main(void) { <br />
-   printf("Hello, World!\n"); //printf instead of pintf<br />
+   printf("Hello, World!\n");<br />
    return 0;<br />
 }</blockquote>
 
