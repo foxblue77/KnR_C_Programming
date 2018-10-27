@@ -6,12 +6,12 @@ C Programming Language" by Brian Kernighan and Dennis Ritchie. This book is coll
 
 <p>Each C file was compiled in the terminal on Mac OSX. You can compile and run your programs from the terminal following these steps:</p>
 
-<code>#include <stdio.h>
+<blockquote>#include <stdio.h>
 
-int main(void) { </br>
-   printf("Hello, world!\n"); //printf instead of pintf</br>
-   return 0;</br>
-}</code>
+int main(void) { 
+   printf("Hello, World!\n"); //printf instead of pintf
+   return 0;
+}</blockquote>
 
 <p>Save a file as HelloWorld.c and type in the terminal:</br>
 
@@ -20,5 +20,5 @@ Afterwards just run the executable like this:</br>
 
 ./HelloWorld</br>
 
-You should be seeing Hello World!
+You should be seeing Hello, World!
 </p>
