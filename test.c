@@ -1,19 +1,20 @@
+//Answers for Exercise 1-3, K&R's The C Programming Language 
+
 #include <stdio.h>
-/*print Fahrenheit-Celsius table
-  for fahr = 0, 20,...,300*/
-int main(){
+
+#define LOWER 0 // lower limit of table
+#define UPPER 300 // upper limit of table
+#define STEP 20 // step size
+
+//print Fahrenheit-Celsius table
   
-  int fahr, celsius;
-  int lower, upper, step;
+int main(void){
 
-  lower = 0; //lower limit of table
-  upper = 300; //upper limit of table
-  step = 20; //step size
-
-  fahr = lower;
-  while (fahr <= upper) {
-    celsius = 5 * (fahr - 32) / 9;
-    printf("%d\t%d\n", fahr, celsius);
-    fahr = fahr + step;
+  int fahr;
+  for (fahr = LOWER; fahr<=UPPER; fahr = fahr + STEP){
+    printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
   }
+  
+  printf("GOODBYE!\n");
+  return 0;
 }
